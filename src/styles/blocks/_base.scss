@@ -1,0 +1,15 @@
+html {
+	box-sizing: border-box;
+	color: $color-base;
+	font-family: $font-base;
+	font-size: $font-size;
+	line-height: 1.2;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.wrap {
+	@include span(full);
+}

@@ -1,0 +1,71 @@
+$susy: (
+	flow: ltr,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	container: auto,
+	container-position: center,
+	columns: 12,
+	gutters: 0.441,
+	column-width: false,
+	global-box-sizing: content-box,
+	last-flow: to
+);
+
+// Breakpoints
+$xs: 			460px;
+$sm: 			540px;
+$md: 			760px;
+$lg: 			960px;
+$xl: 			1200px;
+$xxl: 			1280px;
+
+// Colors
+$color-dark: 	#4e4e4e;
+$color-dark-2: 	#333333;
+$color-dark-a: 	rgba(0,0,0,.8);
+$color-gray: 	#999999;
+$color-gray-2: 	#fefefe;
+$color-gray-3: 	#bbbbbb;
+$color-orange: 	#ed7a00;
+$color-green: 	#006633;
+$color-green-2: #58b878;
+$color-blue: 	#08466D;
+
+$color-base: $color-dark-2;
+
+$color-menu-hover: $color-orange;
+
+$color-link: $color-green;
+$color-link-hover: $color-orange;
+
+$color-gtt: $color-gray;
+$color-gtt-hover: $color-green;
+
+$color-readmore: $color-gray;
+$color-readmore-hover: $color-green;
+
+//Font
+$font-roboto: 'Roboto', 'Helvetica', sans-serif;
+$font-osr: 'OpenSansRegular', 'Helvetica', sans-serif;
+$font-base: $font-osr;
+
+$font-size: 14px;
+
+$button-font-size: $font-size;
+$button-line-height: 1.2;
+
+$link-font-size: $font-size;
+
+$breadcrumbs-font-size: $font-size;
+$breadcrumbs-line-height: 1.2;
+$breadcrumbs-link-color: $color-link;
+$breadcrumbs-color: $color-base;
+$breadcrumbs-link-color-hover: $color-link-hover;
+
+$pagination-font-size: 16px;
+$pagination-line-height: 1.2;
+$pagination-link-color: $color-link;
+$pagination-color: $color-base;
+$pagination-link-color-hover: $color-link-hover;
+$pagination-border: 1px solid $color-gray;
