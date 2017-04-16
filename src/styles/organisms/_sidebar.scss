@@ -6,29 +6,4 @@
 		font-weight: 500;
 		padding-bottom: 85px;
 	}
-
-	&--menu {
-		.menu--link:hover {
-			& > .menu--icon {
-				opacity: 1;
-			}
-		}
-
-		.menu--icon {
-			display: inline-block;
-			height: 57px;
-			width: 50px;
-			background: url("../img/sprite.png") no-repeat;
-			margin-bottom: 6px;
-			opacity: 0.65;
-
-			&__box {
-				background-position: -53px 0;
-			}
-
-			&__map {
-				background-position: -106px 0;
-			}
-		}
-	}
 }

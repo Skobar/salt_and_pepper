@@ -23,8 +23,9 @@
 
 @import 'molecules/socials';
 @import 'molecules/logo';
-@import 'molecules/menu';
 
+@import 'organisms/sidebar-menu';
+@import 'organisms/header-menu';
 @import 'organisms/section';
 @import 'organisms/content';
 @import 'organisms/sidebar';

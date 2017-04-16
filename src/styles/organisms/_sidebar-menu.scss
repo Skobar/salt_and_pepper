@@ -1,0 +1,47 @@
+.sidebar-menu {
+
+	&--list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&--item {
+		padding-bottom: 40px;
+	}
+
+	&--link {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		color: $color-base;
+		text-decoration: none;
+
+		&:hover {
+			& > .sidebar-menu--icon {
+				opacity: 1;
+			}
+		}
+	}
+
+	&--link-text {
+		display: block;
+	}
+
+	&--icon {
+		display: inline-block;
+		height: 57px;
+		width: 50px;
+		background: url("../img/sprite.png") no-repeat;
+		margin-bottom: 6px;
+		opacity: 0.65;
+
+		&__box {
+			background-position: -53px 0;
+		}
+
+		&__map {
+			background-position: -106px 0;
+		}
+	}
+}
