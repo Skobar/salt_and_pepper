@@ -1,0 +1,49 @@
+.middle-content {
+
+	&--billboard {
+		min-height: 715px;
+		padding-top: 105px;
+		padding-left: 49px;
+		position: relative;
+		background: $color-red-2 url("../img/bg-prize-2.jpg");
+
+		&::before {
+			@include pseudo();
+			right: -33px;
+			top: 220px;
+			width: 66px;
+			height: 66px;
+			background: $color-red-3 url("../img/bg-prize-2.jpg") 100% 260px;
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			z-index: 1;
+		}
+	}
+
+	&--heading-wrap {
+		@include clearfix;
+		padding-bottom: 30px;
+	}
+
+	&--heading {
+		padding-top: 64px;
+	}
+
+	&--desc {
+		margin-left: 45px;
+		max-width: 500px;
+		padding-bottom: 45px;
+	}
+
+	&--buttons {
+		margin-left: 40px;
+	}
+
+	&--gallery {
+		background: $color-blue-4;
+		line-height: 0;
+	}
+}

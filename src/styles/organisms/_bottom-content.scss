@@ -1,0 +1,42 @@
+.bottom-content {
+
+	&--billboard {
+		padding-top: 75px;
+		min-height: 717px;
+		text-align: center;
+		position: relative;
+		background: $color-yellow-3 url("../img/bg-sammer-2.jpg");
+		z-index: 2;
+	}
+
+	&--img-block {
+		padding-bottom: 10px;
+	}
+
+	&--heading {
+		padding-bottom: 30px;
+	}
+
+	&--buttons {
+		display: inline-block;
+	}
+
+	&--gallery {
+		position: relative;
+
+		&::before {
+			@include pseudo();
+			right: -33px;
+			top: 220px;
+			width: 66px;
+			height: 66px;
+			background: $color-yellow-3 url("../img/bg-sammer-2.jpg") 0 604px;
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			z-index: 1;
+		}
+	}
+}

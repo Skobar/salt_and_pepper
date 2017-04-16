@@ -1,0 +1,18 @@
+.top-content {
+
+	&--billboard {
+		background: $color-yellow-2 url("../img/bg-gallery.png");
+		min-height: 717px;
+		padding-top: 38px;
+		padding-left: 45px;
+	}
+
+	&--heading {
+		max-width: 285px;
+		padding-bottom: 39px;
+	}
+
+	&--mark {
+		font-weight: normal;
+	}
+}

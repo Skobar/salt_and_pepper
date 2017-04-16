@@ -1,0 +1,37 @@
+.gallery {
+	@include clearfix;
+
+	&--item {
+		line-height: 0;
+	}
+
+	&--wrap {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&--img {
+		-webkit-transition: 3s linear;
+		-o-transition: 3s linear;
+		-moz-transition: 3s linear;
+		-ms-transition: 3s linear;
+		transition: 3s linear;
+
+		&:hover {
+			-webkit-transform: scale(2);
+			-o-transform: scale(2);
+			-ms-transform: scale(2);
+			-moz-transform: scale(2);
+			  transform: scale(2);
+		}
+	}
+
+	&__col3 {
+		padding: 28px;
+
+		.gallery--item {
+			@include span(1 of 3);
+			padding: 4px;
+		}
+	}
+}

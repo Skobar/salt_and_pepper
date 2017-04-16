@@ -1,0 +1,37 @@
+.card {
+	@include clearfix;
+
+	&--billboard {
+		@include span(50%);
+
+		&__right {
+			float: right;
+		}
+	}
+
+	&--content {
+		@include span(50%);
+	}
+
+	&--buttons {
+		width: 250px;
+	}
+
+	&--img-block {
+
+		&__left {
+			display: inline-block;
+			float: left;
+		}
+	}
+
+	&--desc {
+		font-size: 20px;
+		line-height: 1.4;
+		color: $color-base;
+
+		&__invert {
+			color: white;
+		}
+	}
+}
