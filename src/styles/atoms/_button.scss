@@ -1,22 +1,29 @@
 .button {
 	display: inline-block;
-	border: none;
-	background: $color-gray;
-	color: white;
-	padding: 3px 10px 5px;
+	border: 3px solid $color-base;
+	background: $color-alpha-btn-bg;
+	color: $color-base;
+	padding: 25px 10px 22px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
 	position: relative;
-	font-size: $button-font-size;
-	line-height: $button-line-height;
+	font-size: 25px;
+	line-height: 1;
 
-	&--full {
+	&__full {
 		width: 100%;
 	}
 
+	&__invert {
+		color: white;
+		border-color: white;
+	}
+
 	&:hover {
-		background: lighten($color-gray, 20%);
-		color: darken(white, 60%);
+		// background: lighten($color-alpha-btn-bg, 20%);
+		// background: darken($color-alpha-btn-bg, 20%);
+		background: $color-alpha-btn-bg-hover;
 	}
 }
+

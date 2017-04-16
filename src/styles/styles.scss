@@ -12,7 +12,6 @@
 
 @import 'blocks/base';
 @import 'blocks/fonts';
-@import 'blocks/section';
 
 @import 'atoms/container';
 @import 'atoms/button';
@@ -20,7 +19,13 @@
 @import 'atoms/dev';
 @import 'atoms/link';
 @import 'atoms/heading';
+@import 'atoms/mark';
 
 // @import 'molecules/gototop';
 
-// @import 'organisms/section';
+@import 'organisms/section';
+@import 'organisms/content';
+@import 'organisms/sidebar';
+@import 'organisms/wrap';
+@import 'organisms/header';
+@import 'organisms/footer';
