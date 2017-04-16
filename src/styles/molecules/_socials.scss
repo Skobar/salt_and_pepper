@@ -1,0 +1,42 @@
+.socials {
+
+	&--list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: right;
+		font-size: 0;
+		line-height: 0;
+	}
+
+	&--item {
+		display: inline-block;
+	}
+
+	&--link {
+		display: block;
+		width: 100px;
+		height: 100px;
+		opacity: 0.9;
+
+		&__fb {
+			background: $color-blue url("../img/sprite.png") no-repeat 0 -135px;
+		}
+
+		&__vk {
+			background: $color-blue-2 url("../img/sprite.png") no-repeat -103px -135px;
+		}
+
+		&__yamap {
+			background: $color-yellow url("../img/sprite.png") no-repeat -206px -135px;
+		}
+
+		&__yt {
+			background: $color-red-2 url("../img/sprite.png") no-repeat -309px -135px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

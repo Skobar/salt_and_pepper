@@ -1,3 +1,21 @@
 .footer {
 	background: $color-dark-3;
+
+	&--content {
+		@include span(50%);
+		padding-top: 20px;
+		padding-left: 32px;
+	}
+
+	&--copy {
+		display: inline-block;
+		padding-top: 10px;
+		font-size: 12px;
+		line-height: 47px;
+		color: $color-gray-2;
+	}
+
+	&--socials {
+		@include span(50%);
+	}
 }
