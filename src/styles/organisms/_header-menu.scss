@@ -1,6 +1,11 @@
 .header-menu {
-	margin-left: 83px;
-	padding-bottom: 56px;
+	margin-left: 65px;
+	padding-bottom: 48px;
+
+	@include susy-breakpoint($xl){
+		margin-left: 83px;
+		padding-bottom: 56px;
+	}
 
 	&--list {
 		margin: 0;
@@ -10,9 +15,32 @@
 
 	&--item {
 		width: 160px;
-		margin-right: 22px;
 		vertical-align: top;
 		display: inline-block;
+
+		&:nth-child(2){
+			.header-menu--link-text {
+				padding: 0 20px;
+
+				@include susy-breakpoint($xl){
+					padding: 0 10px;
+				}
+			}
+		}
+
+		&:nth-child(3){
+			.header-menu--link-text {
+				padding: 0 10px;
+
+				@include susy-breakpoint($xl){
+					padding: 0;
+				}
+			}
+		}
+
+		@include susy-breakpoint($xl){
+			margin-right: 22px;
+		}
 	}
 
 	&--link {
@@ -31,48 +59,28 @@
 
 	&--link-text {
 		display: block;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.3;
 		color: $color-dark-2;
+
+		@include susy-breakpoint($xl){
+			font-size: 18px;
+			line-height: 1.3;
+		}
 	}
 
 	&--icon {
 		border-radius: 50%;
 		background: white;
 		display: inline-block;
-		height: 124px;
-		width: 124px;
+		height: 110px;
+		width: 110px;
 		position: relative;
-		margin-bottom: 13px;
-	}
+		margin-bottom: 15px;
 
-	&--icon__round::before {
-		@include pseudo();
-		width: 68px;
-		height: 68px;
-		top: 50%;
-		left: 50%;
-		margin-top: -38px;
-		margin-left: -34px;
-		background: url("../img/sprite.png") 0 -63px;
-		opacity: 0.9;
-	}
-
-	&--icon__heart-color {
-
-		&::before {
-			background-position: -71px -63px;
-			margin-top: -31px;
+		@include susy-breakpoint($xl){
+			height: 124px;
+			width: 124px;
 		}
-
-		& + .header-menu--link-text {
-			padding: 0 10px;
-		}
-	}
-
-	&--icon__box-color::before {
-		background-position: -139px -63px;
-		margin-top: -37px;
-		margin-left: -36px;
 	}
 }

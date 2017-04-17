@@ -1,24 +1,39 @@
 .slogan {
 	color: $color-red;
 	font-weight: 300;
-	font-size: 55px;
-	line-height: 0.9;
+	font-size: 49px;
+	line-height: 1;
 	letter-spacing: .05em;
 	text-transform: uppercase;
-	margin-left: 80px;
+	margin-left: 70px;
+
+	@include susy-breakpoint($xl){
+		margin-left: 80px;
+		font-size: 55px;
+		line-height: 0.9;
+	}
 
 	&--middle  {
-		font-size: 99px;
+		font-size: 88px;
 		line-height: 1;
 		font-weight: 500;
 		letter-spacing: 0.04em;
+
+		@include susy-breakpoint($xl){
+			font-size: 99px;
+		}
 	}
 
 	&--bold {
-		font-size: 88px;
-		line-height: 0.8;
+		font-size: 78px;
+		line-height: 0.7;
 		font-weight: 900;
 		text-transform: none;
 		letter-spacing: 0;
+
+		@include susy-breakpoint($xl){
+			font-size: 88px;
+			line-height: 0.8;
+		}
 	}
 }
