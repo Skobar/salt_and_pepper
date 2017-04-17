@@ -30,12 +30,14 @@
 
 	&--heading {
 		padding-top: 64px;
+		line-height: 1.04;
 	}
 
 	&--desc {
-		margin-left: 45px;
+		margin-left: 41px;
 		max-width: 500px;
-		padding-bottom: 45px;
+		padding-bottom: 47px;
+		letter-spacing: 0.005em;
 	}
 
 	&--buttons {

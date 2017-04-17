@@ -7,7 +7,7 @@
 	}
 
 	&--item {
-		padding-bottom: 40px;
+		padding-bottom: 43px;
 	}
 
 	&--link {
@@ -19,13 +19,14 @@
 
 		&:hover {
 			& > .sidebar-menu--icon {
-				opacity: 1;
+				opacity: 0.8;
 			}
 		}
 	}
 
 	&--link-text {
 		display: block;
+		line-height: 1;
 	}
 
 	&--icon {
@@ -33,8 +34,7 @@
 		height: 57px;
 		width: 50px;
 		background: url("../img/sprite.png") no-repeat;
-		margin-bottom: 6px;
-		opacity: 0.65;
+		margin-bottom: 5px;
 
 		&__box {
 			background-position: -53px 0;
