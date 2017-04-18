@@ -1,10 +1,18 @@
 .header-menu {
-	margin-left: 65px;
-	padding-bottom: 48px;
+	margin-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+
+	@include susy-breakpoint(1100px){
+		margin-left: 65px;
+		padding-bottom: 48px;
+		padding-top: 5.4%;
+	}
 
 	@include susy-breakpoint($xl){
 		margin-left: 83px;
 		padding-bottom: 56px;
+		padding-top: 75px;
 	}
 
 	&--list {
@@ -14,7 +22,7 @@
 	}
 
 	&--item {
-		width: 160px;
+		width: 120px;
 		vertical-align: top;
 		display: inline-block;
 
@@ -36,6 +44,10 @@
 					padding: 0;
 				}
 			}
+		}
+
+		@include susy-breakpoint(1100px){
+			width: 160px;
 		}
 
 		@include susy-breakpoint($xl){
@@ -77,6 +89,11 @@
 		width: 110px;
 		position: relative;
 		margin-bottom: 15px;
+
+		@include susy-breakpoint(1200px){
+			height: 110px;
+			width: 110px;
+		}
 
 		@include susy-breakpoint($xl){
 			height: 124px;

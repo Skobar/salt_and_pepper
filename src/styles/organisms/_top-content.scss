@@ -1,7 +1,12 @@
 .top-content {
+	@include clearfix;
+	// position: relative;
+	overflow: hidden;
+	background: $color-yellow-4;
 
 	&--billboard {
 		background: $color-yellow-2 url("../img/bg-gallery.png") 100% 0;
+		background-size: cover;
 		min-height: 717px;
 		padding-top: 37px;
 		padding-left: 42px;

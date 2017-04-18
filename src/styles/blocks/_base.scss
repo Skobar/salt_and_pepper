@@ -1,9 +1,14 @@
 html {
+	font-sizr: 1px;
+}
+
+body {
 	box-sizing: border-box;
 	color: $color-base;
 	font-family: $font-base;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
+	background: $color-gray;
 }
 
 *, *::before, *::after {

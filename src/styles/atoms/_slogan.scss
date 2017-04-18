@@ -2,8 +2,9 @@
 	color: $color-red;
 	font-weight: 300;
 	font-size: 49px;
+	font-size: 3.26vw;
 	line-height: 1;
-	letter-spacing: .05em;
+	letter-spacing: .19rem;
 	text-transform: uppercase;
 	margin-left: 70px;
 
@@ -15,17 +16,19 @@
 
 	&--middle  {
 		font-size: 88px;
+		font-size: 6.36vw;
 		line-height: 1;
 		font-weight: 500;
-		letter-spacing: 0.04em;
+		letter-spacing: 0.27rem;
 
 		@include susy-breakpoint($xl){
-			font-size: 99px;
+			// font-size: 99px;
 		}
 	}
 
 	&--bold {
 		font-size: 78px;
+		font-size: 5.6vw;
 		line-height: 0.7;
 		font-weight: 900;
 		text-transform: none;

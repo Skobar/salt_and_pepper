@@ -1,0 +1,143 @@
+.animation {
+
+	&__header {
+		background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
+		background-size: cover;
+		opacity: 0;
+		position: relative;
+		-webkit-animation: goToLeft 1.5s;
+		-moz-animation: goToLeft 1.5s;
+		-o-animation: goToLeft 1.5s;
+		-ms-animation: goToLeft 1.5s;
+		animation: goToLeft 1.5s;
+		-moz-animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+		-ms-animation-fill-mode: both;
+		-o-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+	&__photo,
+	&__heart,
+	&__box {
+		opacity: 0;
+		-webkit-animation-name: firstIcon 0.5s;
+		-o-animation-name: firstIcon 0.5s;
+		-moz-animation-name: firstIcon 0.5s;
+		-ms-animation-name: firstIcon 0.5s;
+		animation: firstIcon 0.5s;
+		-webkit-animation-fill-mode: both;
+		-o-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
+		-ms-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+	&__photo {
+		-webkit-animation-delay: 1.5s;
+		-o-animation-delay: 1.5s;
+		-moz-animation-delay: 1.5s;
+		-ms-animation-delay: 1.5s;
+		animation-delay: 1.5s;
+	}
+
+	&__heart {
+		-webkit-animation-delay: 1.8s;
+		-o-animation-delay: 1.8s;
+		-moz-animation-delay: 1.8s;
+		-ms-animation-delay: 1.8s;
+		animation-delay: 1.8s;
+	}
+
+	&__box {
+		-webkit-animation-delay: 2.1s;
+		-o-animation-delay: 2.1s;
+		-moz-animation-delay: 2.1s;
+		-ms-animation-delay: 2.1s;
+		animation-delay: 2.1s;
+	}
+
+	&__top-content {
+		position: relative;
+		opacity: 0;
+
+		-moz-animation: goToRight 1.5s;
+		-webkit-animation: goToRight 1.5s;
+		-ms-animation: goToRight 1.5s;
+		-o-animation: goToRight 1.5s;
+		animation: goToRight 1.5s;
+		-moz-animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+		-ms-animation-fill-mode: both;
+		-o-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+// -------------------------------------
+	@-moz-keyframes  goToLeft {
+	    from {right: -350px; opacity: 0;}
+	    to {right: 0px; opacity: 1;}
+	}
+	@-webkit-keyframes  goToLeft {
+	    from {right: -350px; opacity: 0;}
+	    to {right: 0px; opacity: 1;}
+	}
+	@-ms-keyframes  goToLeft {
+	    from {right: -350px; opacity: 0;}
+	    to {right: 0px; opacity: 1;}
+	}
+	@-o-keyframes  goToLeft {
+	    from {right: -350px; opacity: 0;}
+	    to {right: 0px; opacity: 1;}
+	}
+	@keyframes  goToLeft {
+	    from {right: -350px; opacity: 0;}
+	    to {right: 0px; opacity: 1;}
+	}
+// -----------------------------------
+	@-moz-keyframes  goToRight {
+	    from {left: -350px; opacity: 0;}
+	    to {left: 0px; opacity: 1;}
+	}
+	@-webkit-keyframes  goToRight {
+	    from {left: -350px; opacity: 0;}
+	    to {left: 0px; opacity: 1;}
+	}
+	@-ms-keyframes  goToRight {
+	    from {left: -350px; opacity: 0;}
+	    to {left: 0px; opacity: 1;}
+	}
+	@-o-keyframes  goToRight {
+	    from {left: -350px; opacity: 0;}
+	    to {left: 0px; opacity: 1;}
+	}
+	@keyframes  goToRight {
+	    from {left: -350px; opacity: 0;}
+	    to {left: 0px; opacity: 1;}
+	}
+// ------------------------------------
+	@-moz-keyframes firstIcon {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+	@-webkit-keyframes firstIcon {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+	@-o-keyframes firstIcon {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+	@-ms-keyframes firstIcon {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+	@keyframes firstIcon {
+	    from {opacity: 0;}
+	    to {opacity: 1;}
+	}
+}
+
+// transform: translate(350px,0);
+// transition: transform 1s ease,opacity 1.2s ease;
+// transform: translate(0,0);
+// -webkit-animation-fill-mode: both;

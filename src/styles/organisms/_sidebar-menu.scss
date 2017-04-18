@@ -7,20 +7,25 @@
 	}
 
 	&--item {
-		padding-bottom: 43px;
 	}
 
 	&--link {
 		display: inline-block;
+		position: relative;
 		width: 100%;
+		height: 100%;
 		text-align: center;
 		color: $color-base;
 		text-decoration: none;
+		padding-top: 23px;
+		padding-bottom: 23px;
+		transition: background 1s ease, border-color 1s ease;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
 
 		&:hover {
-			& > .sidebar-menu--icon {
-				opacity: 0.8;
-			}
+			background: white;
+			border-color: $color-gray-3;
 		}
 	}
 

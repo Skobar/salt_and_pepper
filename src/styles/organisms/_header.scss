@@ -1,11 +1,6 @@
 .header {
-	background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
-		background-size: cover;
-		padding-top: 67px;
-		min-height: 580px;
+	background: $color-yellow-4;
+	overflow: hidden;
+	@include clearfix;
 
-	@include susy-breakpoint($xl){
-		padding-top: 75px;
-		min-height: 654px;
-	}
 }

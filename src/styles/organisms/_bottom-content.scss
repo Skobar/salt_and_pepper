@@ -41,4 +41,22 @@
 			z-index: 1;
 		}
 	}
+
+	.gallery--img {
+		-webkit-transition: all 35s linear;
+		-o-transition: all 35s linear;
+		-moz-transition: all 35s linear;
+		-ms-transition: all 35s linear;
+		transition: all 35s linear;
+	}
+
+	&:hover {
+		.gallery--img {
+			-webkit-transform: scale(2);
+			-o-transform: scale(2);
+			-ms-transform: scale(2);
+			-moz-transform: scale(2);
+			transform: scale(2);
+		}
+	}
 }
