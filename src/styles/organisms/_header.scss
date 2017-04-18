@@ -3,4 +3,8 @@
 	overflow: hidden;
 	@include clearfix;
 
+	&--animation {
+		background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
+		background-size: cover;
+	}
 }
