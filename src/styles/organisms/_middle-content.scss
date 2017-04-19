@@ -1,11 +1,13 @@
 .middle-content {
+	overflow: hidden;
 
 	&--billboard {
-		min-height: 715px;
 		padding-top: 105px;
 		padding-left: 49px;
+		max-height: 715px;
 		position: relative;
 		background: $color-red-2 url("../img/bg-prize-2.jpg");
+			z-index: 3;
 
 		&::before {
 			@include pseudo();
@@ -19,7 +21,7 @@
 			-moz-transform: rotate(45deg);
 			-ms-transform: rotate(45deg);
 			transform: rotate(45deg);
-			z-index: 1;
+			z-index: 2;
 		}
 	}
 
@@ -46,7 +48,10 @@
 
 	&--gallery {
 		background: $color-blue-4;
+		position: relative;
 		line-height: 0;
+		max-height: 715px;
+		z-index: 0;
 	}
 
 	.gallery--img {

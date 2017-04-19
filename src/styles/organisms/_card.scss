@@ -1,8 +1,10 @@
 .card {
 	@include clearfix;
+	display: flex;
+	background: $color-yellow-2;
 
 	&--billboard {
-		@include span(50%);
+		width: 50%;
 
 		&__right {
 			float: right;
@@ -10,7 +12,7 @@
 	}
 
 	&--content {
-		@include span(50%);
+		width:50%;
 	}
 
 	&--buttons {

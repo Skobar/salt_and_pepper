@@ -1,12 +1,33 @@
 .bottom-content {
 
+	&--card {
+		flex-direction: row-reverse;
+		overflow: hidden;
+	}
+
 	&--billboard {
 		padding-top: 75px;
-		min-height: 717px;
+		max-height: 717px;
 		text-align: center;
 		position: relative;
 		background: $color-yellow-3 url("../img/bg-sammer-2.jpg");
+		background-size: cover;
 		z-index: 2;
+
+		&::before {
+			@include pseudo();
+			left: -33px;
+			top: 361px;
+			width: 66px;
+			height: 66px;
+			background: $color-yellow-3 url("../img/bg-sammer-2.jpg") 89px 428px;
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			z-index: 1;
+		}
 	}
 
 	&--img-block {
@@ -25,21 +46,7 @@
 
 	&--gallery {
 		position: relative;
-
-		&::before {
-			@include pseudo();
-			right: -33px;
-			top: 361px;
-			width: 66px;
-			height: 66px;
-			background: $color-yellow-3 url("../img/bg-sammer-2.jpg") 89px 428px;
-			-webkit-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
-			z-index: 1;
-		}
+		max-height: 717px;
 	}
 
 	.gallery--img {

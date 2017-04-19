@@ -15,12 +15,25 @@
 	&__heart,
 	&__box {
 		opacity: 0;
-		-webkit-animation-name: firstIcon 0.5s;
-		-o-animation-name: firstIcon 0.5s;
-		-moz-animation-name: firstIcon 0.5s;
-		-ms-animation-name: firstIcon 0.5s;
-		animation: firstIcon 0.5s;
+		-webkit-animation: firstIcon 2.2s;
+		-o-animation: firstIcon 2.2s;
+		-moz-animation: firstIcon 2.2s;
+		-ms-animation: firstIcon 2.2s;
+		animation: firstIcon 2.2s;
 		@include fillmode;
+
+		.header-menu--icon {
+			&::before {
+				animation: jumpUp .8s;
+				@include fillmode;
+				width: 10px;
+				height: 10px;
+				top: 50%;
+				left: 50%;
+				margin-top: -5px;
+				margin-left: -5px;
+			}
+		}
 	}
 
 	&__photo {
@@ -29,6 +42,12 @@
 		-moz-animation-delay: 1.5s;
 		-ms-animation-delay: 1.5s;
 		animation-delay: 1.5s;
+
+		.header-menu--icon {
+			&::before {
+				animation-delay: 1.5s;
+			}
+		}
 	}
 
 	&__heart {
@@ -37,6 +56,12 @@
 		-moz-animation-delay: 1.8s;
 		-ms-animation-delay: 1.8s;
 		animation-delay: 1.8s;
+
+		.header-menu--icon {
+			&::before {
+				animation-delay: 1.8s;
+			}
+		}
 	}
 
 	&__box {
@@ -45,11 +70,16 @@
 		-moz-animation-delay: 2.1s;
 		-ms-animation-delay: 2.1s;
 		animation-delay: 2.1s;
+
+		.header-menu--icon {
+			&::before {
+				animation-delay: 2.1s;
+			}
+		}
 	}
 
 	&__to-right {
 		position: relative;
-		background: white;
 		opacity: 0;
 
 		-moz-animation: goToRight 1.5s;
@@ -121,6 +151,33 @@
 	@keyframes firstIcon {
 	    from {opacity: 0;}
 	    to {opacity: 1;}
+	}
+	// --------------------
+	@keyframes jumpUp {
+	    40% {
+		    width: 10px;
+		    height: 10px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -5px;
+		    margin-top: -5px;
+		}
+		80% {
+		    width: 150px;
+		    height: 150px;
+		    margin-left: -15px;
+		    margin-top: -15px;
+			top: 0;
+			left: 0;
+		}
+		100% {
+			width: 120px;
+			height: 120px;
+		    margin-left: 0;
+		    margin-top: 0;
+			top: 0;
+			left: 0;
+		}
 	}
 }
 
