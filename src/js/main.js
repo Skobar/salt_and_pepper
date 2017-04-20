@@ -8,3 +8,4 @@
  */
 /*//= partials/topmenu.js*/
 //= partials/proportion.js
+//= partials/animation.js
