@@ -1,4 +1,9 @@
 .content {
-	width: calc(100% - 150px);
-	float: left;
+	padding-top: 160px;
+
+	@include susy-breakpoint(680px){
+		padding-top: 0px;
+		width: calc(100% - 150px);
+		float: left;
+	}
 }

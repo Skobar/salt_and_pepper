@@ -1,12 +1,43 @@
 .sidebar-menu {
 
 	&--list {
+		@include clearfix;
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 	}
 
 	&--item {
+		// display: none;
+		background: $color-gray;
+		border-top: 1px solid $color-gray-alpha-2;
+		transform: translate3d(100%,0,0);
+
+		@include susy-breakpoint(680px){
+			background: none;
+			border: none;
+		}
+
+		&__close {
+
+			@include susy-breakpoint(680px){
+				display: none;
+			}
+
+			.sidebar-menu--link {
+				color: $color-gray-4;
+			}
+		}
+
+		&:nth-child(even){
+			transform: translate3d(-100%,0,0);
+		}
+
+		&__active,
+		&__active:nth-child(even) {
+			transform: translate3d(0,0,0);
+			transition: transform 0.5s;
+		}
 	}
 
 	&--link {
@@ -40,6 +71,13 @@
 		width: 50px;
 		background: url("../img/sprite.png") no-repeat;
 		margin-bottom: 5px;
+		position: absolute;
+		left: 30px;
+		top: 0;
+
+		@include susy-breakpoint(680px){
+			position: static;
+		}
 
 		&__box {
 			background-position: -53px 0;
@@ -49,4 +87,6 @@
 			background-position: -106px 0;
 		}
 	}
+
+	// --------- phone menu
 }

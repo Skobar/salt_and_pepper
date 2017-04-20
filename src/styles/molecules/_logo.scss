@@ -9,13 +9,28 @@
 	}
 
 	&__top {
-		padding-top: 28px;
+		padding-top: 32px;
 		padding-bottom: 10px;
+		@include span(140px);
+
+		@include susy-breakpoint(680px){
+			padding-top: 28px;
+
+		}
 	}
 
 	&__bottom {
 		display: inline-block;
 		float: left;
 		margin-right: 10px;
+	}
+
+	&--img {
+		width: 107px;
+		height: auto;
+
+		@include susy-breakpoint(680px){
+			width: auto;
+		}
 	}
 }
