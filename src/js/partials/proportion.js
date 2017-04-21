@@ -7,11 +7,16 @@ function setHeight( el, i){
 }
 
 $(document).ready(function(){
-	var header 				= $(".header--animation");
+	var header 		= $(".header--animation");
 
 	setHeight( header, 2.1559633 );
 
 	$(window).resize(function(){
-		setHeight( header, 2.1559633 );
+		var win_w = $(window).width();
+
+		if(win_w > 680)
+			setHeight( header, 2.1559633 );
+		else
+			header.removeAttr("style");
 	});
 });

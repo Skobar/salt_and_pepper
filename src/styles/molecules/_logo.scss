@@ -11,11 +11,15 @@
 	&__top {
 		padding-top: 32px;
 		padding-bottom: 10px;
-		@include span(140px);
+
+		@include susy-breakpoint(400px){
+			@include span(140px);
+		}
 
 		@include susy-breakpoint(680px){
+			float: none;
+			width: 100%;
 			padding-top: 28px;
-
 		}
 	}
 

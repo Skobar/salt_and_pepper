@@ -8,14 +8,31 @@
 	}
 
 	&--item {
-		// display: none;
+		opacity: 0;
+		visibility: hidden;
 		background: $color-gray;
 		border-top: 1px solid $color-gray-alpha-2;
-		transform: translate3d(100%,0,0);
+		transform: translate3d(20%,0,0);
+		transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
+
+		&:nth-child(even){
+			transform: translate3d(-20%,0,0);
+
+			@include susy-breakpoint(680px){
+				opacity: 1;
+				visibility: visible;
+				background: none;
+				border: none;
+				transform: none;
+			}
+		}
 
 		@include susy-breakpoint(680px){
+			opacity: 1;
+			visibility: visible;
 			background: none;
 			border: none;
+			transform: none;
 		}
 
 		&__close {
@@ -29,14 +46,12 @@
 			}
 		}
 
-		&:nth-child(even){
-			transform: translate3d(-100%,0,0);
-		}
-
 		&__active,
 		&__active:nth-child(even) {
+			opacity: 1;
+			visibility: visible;
 			transform: translate3d(0,0,0);
-			transition: transform 0.5s;
+			transition: transform 0.5s, opacity 1s, visibility 0.5s;
 		}
 	}
 
@@ -58,11 +73,22 @@
 			background: white;
 			border-color: $color-gray-3;
 		}
+
+		&__close {
+			.sidebar-menu--link-text {
+				padding-left: 0;
+			}
+		}
 	}
 
 	&--link-text {
 		display: block;
 		line-height: 1;
+		padding-left: 70px;
+
+		@include susy-breakpoint(400px){
+			padding-left: 0;
+		}
 	}
 
 	&--icon {
@@ -72,8 +98,12 @@
 		background: url("../img/sprite.png") no-repeat;
 		margin-bottom: 5px;
 		position: absolute;
-		left: 30px;
+		left: 10px;
 		top: 0;
+
+		@include susy-breakpoint(400px){
+			left: 30px;
+		}
 
 		@include susy-breakpoint(680px){
 			position: static;

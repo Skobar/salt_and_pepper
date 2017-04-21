@@ -1,5 +1,9 @@
 .content {
-	padding-top: 160px;
+	padding-top: 250px;
+
+	@include susy-breakpoint(400px){
+		padding-top: 160px;
+	}
 
 	@include susy-breakpoint(680px){
 		padding-top: 0px;
