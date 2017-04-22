@@ -3,14 +3,23 @@
 	border: 3px solid $color-base;
 	background: $color-alpha-btn-bg;
 	color: $color-base;
-	padding: 20px 10px;
+	padding: 17px 10px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
 	position: relative;
-	font-size: 25px;
+	font-size: 18px;
 	line-height: 1;
 	letter-spacing: 0.05em;
+
+	@include susy-breakpoint(400px){
+		font-size: 22px;
+	}
+
+	@include susy-breakpoint(680px){
+		font-size: 25px;
+		padding: 20px 10px;
+	}
 
 	&__full {
 		width: 100%;
@@ -22,8 +31,6 @@
 	}
 
 	&:hover {
-		// background: lighten($color-alpha-btn-bg, 20%);
-		// background: darken($color-alpha-btn-bg, 20%);
 		background: $color-alpha-btn-bg-hover;
 	}
 }

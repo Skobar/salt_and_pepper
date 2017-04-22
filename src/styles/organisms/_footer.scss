@@ -1,22 +1,33 @@
 .footer {
 	background: $color-dark-3;
+	text-align: center;
 
 	&--content {
-		@include span(50%);
-		padding-top: 20px;
-		padding-left: 32px;
+		padding: 20px;
+
+		@include susy-breakpoint(680px){
+			@include span(50%);
+			padding-top: 20px;
+			padding-left: 32px;
+		}
 	}
 
 	&--copy {
 		display: inline-block;
 		padding-top: 9px;
 		font-size: 12px;
-		line-height: 47px;
 		color: $color-gray-2;
 		letter-spacing: 0.028em;
+
+		@include susy-breakpoint(680px){
+			line-height: 47px;
+		}
 	}
 
 	&--socials {
-		@include span(50%);
+
+		@include susy-breakpoint(680px){
+			@include span(50%);
+		}
 	}
 }

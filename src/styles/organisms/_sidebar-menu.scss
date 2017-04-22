@@ -5,6 +5,11 @@
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
+		max-height: 160px;
+
+		@include susy-breakpoint(680px){
+			max-height: auto;
+		}
 	}
 
 	&--item {

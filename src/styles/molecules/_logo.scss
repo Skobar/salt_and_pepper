@@ -11,6 +11,7 @@
 	&__top {
 		padding-top: 32px;
 		padding-bottom: 10px;
+		padding-left: 7px;
 
 		@include susy-breakpoint(400px){
 			@include span(140px);
@@ -20,13 +21,17 @@
 			float: none;
 			width: 100%;
 			padding-top: 28px;
+			padding-left: 0;
 		}
 	}
 
 	&__bottom {
-		display: inline-block;
-		float: left;
-		margin-right: 10px;
+
+		@include susy-breakpoint(680px){
+			display: inline-block;
+			float: left;
+			margin-right: 10px;
+		}
 	}
 
 	&--img {

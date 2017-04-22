@@ -1,9 +1,13 @@
 .svg-img {
 
 	&__photo-color {
-		width: 52px;
+		width: 54px;
 		height: auto;
 		margin-top: 27px;
+
+		@include susy-breakpoint(400px){
+			margin-top: 31px;
+		}
 
 		@include susy-breakpoint($xl){
 			width: 60px;
@@ -11,9 +15,9 @@
 	}
 
 	&__heart-color {
-		width: 60px;
+		width: 62px;
 		height: auto;
-		margin-top: 32px;
+		margin-top: 38px;
 
 		@include susy-breakpoint($xl){
 			width: 67px;
@@ -21,9 +25,13 @@
 	}
 
 	&__box-color {
-		width: 55px;
+		width: 61px;
 		height: auto;
 		margin-top: 21px;
+
+		@include susy-breakpoint(400px){
+			margin-top: 25px;
+		}
 
 		@include susy-breakpoint($xl){
 			width: 62px;

@@ -1,41 +1,70 @@
 .slogan {
 	color: $color-red;
 	font-weight: 300;
-	font-size: 49px;
-	font-size: 3.26vw;
+	font-size: 30px;
 	line-height: 1;
 	letter-spacing: .19rem;
 	text-transform: uppercase;
-	margin-left: 70px;
+	background: $color-dark-alpha;
+	padding: 20px 10px 20px;
+	text-align: center;
+
+	@include susy-breakpoint(400px){
+		background: none;
+		font-size: 49px;
+		line-height: 1;
+		padding-top: 40px;
+		padding-bottom: 37px;
+		margin-left: 11px;
+	}
+
+	@include susy-breakpoint(680px){
+		text-align: left;
+		font-size: 3.26vw;
+		margin-left: 70px;
+		padding: 0;
+	}
 
 	@include susy-breakpoint($xl){
 		margin-left: 80px;
+		font-size: 49px;
 		font-size: 55px;
 		line-height: 0.9;
 	}
 
 	&--middle  {
-		font-size: 88px;
-		font-size: 6.36vw;
+		font-size: 30px;
 		line-height: 1;
 		font-weight: 500;
 		letter-spacing: 0.27rem;
 
+		@include susy-breakpoint(400px){
+			font-size: 88px;
+			font-size: 14vw;
+			margin-left: 12px;
+		}
+
 		@include susy-breakpoint($xl){
+			margin-left: 0;
 			// font-size: 99px;
 		}
 	}
 
 	&--bold {
-		font-size: 78px;
-		font-size: 5.6vw;
+		font-size: 50px;
 		line-height: 0.7;
 		font-weight: 900;
 		text-transform: none;
 		letter-spacing: 0;
 
+		@include susy-breakpoint(400px){
+			font-size: 78px;
+			font-size: 12vw;
+		}
+
 		@include susy-breakpoint($xl){
 			font-size: 88px;
+			font-size: 5.6vw;
 			line-height: 0.8;
 		}
 	}

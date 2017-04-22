@@ -2,23 +2,30 @@
 	opacity: 0;
 
 	&__to-left {
+		right: 0;
+		opacity: 1;
 		position: relative;
-		-webkit-animation: goToLeft 1.5s;
-		-moz-animation: goToLeft 1.5s;
-		-o-animation: goToLeft 1.5s;
-		-ms-animation: goToLeft 1.5s;
-		animation: goToLeft 1.5s;
-		@include fillmode;
+
+		@include susy-breakpoint(680px){
+			right: -350px;
+			opacity: 0;
+			-webkit-animation: goToLeft 1.5s;
+			   -moz-animation: goToLeft 1.5s;
+				-ms-animation: goToLeft 1.5s;
+				 -o-animation: goToLeft 1.5s;
+					animation: goToLeft 1.5s;
+			@include fillmode;
+		}
 	}
 
 	&__photo,
 	&__heart,
 	&__box {
 		-webkit-animation: firstIcon 2.2s;
-		-o-animation: firstIcon 2.2s;
-		-moz-animation: firstIcon 2.2s;
-		-ms-animation: firstIcon 2.2s;
-		animation: firstIcon 2.2s;
+		   -moz-animation: firstIcon 2.2s;
+			-ms-animation: firstIcon 2.2s;
+			 -o-animation: firstIcon 2.2s;
+				animation: firstIcon 2.2s;
 		@include fillmode;
 
 		.header-menu--icon {
@@ -36,56 +43,89 @@
 	}
 
 	&__photo {
-		-webkit-animation-delay: 1.5s;
-		-o-animation-delay: 1.5s;
-		-moz-animation-delay: 1.5s;
-		-ms-animation-delay: 1.5s;
-		animation-delay: 1.5s;
+
+		@include susy-breakpoint(680px){
+			-webkit-animation-delay: 1.5s;
+			   -moz-animation-delay: 1.5s;
+				-ms-animation-delay: 1.5s;
+				 -o-animation-delay: 1.5s;
+					animation-delay: 1.5s;
+		}
 
 		.header-menu--icon {
 			&::before {
-				animation-delay: 1.5s;
+
+				@include susy-breakpoint(680px){
+					-webkit-animation-delay: 1.5s;
+					   -moz-animation-delay: 1.5s;
+						-ms-animation-delay: 1.5s;
+						 -o-animation-delay: 1.5s;
+							animation-delay: 1.5s;
+				}
 			}
 		}
 	}
 
 	&__heart {
-		-webkit-animation-delay: 1.8s;
-		-o-animation-delay: 1.8s;
-		-moz-animation-delay: 1.8s;
-		-ms-animation-delay: 1.8s;
-		animation-delay: 1.8s;
+		@include susy-breakpoint(680px){
+			-webkit-animation-delay: 1.8s;
+			   -moz-animation-delay: 1.8s;
+				-ms-animation-delay: 1.8s;
+				 -o-animation-delay: 1.8s;
+					animation-delay: 1.8s;
+		}
 
 		.header-menu--icon {
 			&::before {
-				animation-delay: 1.8s;
+				@include susy-breakpoint(680px){
+					-webkit-animation-delay: 1.8s;
+					   -moz-animation-delay: 1.8s;
+						-ms-animation-delay: 1.8s;
+						 -o-animation-delay: 1.8s;
+							animation-delay: 1.8s;
+				}
 			}
 		}
 	}
 
 	&__box {
-		-webkit-animation-delay: 2.1s;
-		-o-animation-delay: 2.1s;
-		-moz-animation-delay: 2.1s;
-		-ms-animation-delay: 2.1s;
-		animation-delay: 2.1s;
+		@include susy-breakpoint(680px){
+			-webkit-animation-delay: 2.1s;
+			   -moz-animation-delay: 2.1s;
+				-ms-animation-delay: 2.1s;
+				 -o-animation-delay: 2.1s;
+					animation-delay: 2.1s;
+		}
 
 		.header-menu--icon {
 			&::before {
-				animation-delay: 2.1s;
+				@include susy-breakpoint(680px){
+					-webkit-animation-delay: 2.1s;
+					   -moz-animation-delay: 2.1s;
+						-ms-animation-delay: 2.1s;
+						 -o-animation-delay: 2.1s;
+							animation-delay: 2.1s;
+				}
 			}
 		}
 	}
 
 	&__to-right {
 		position: relative;
+		left: 0;
+		opacity: 1;
 
-		-moz-animation: goToRight 1.5s;
-		-webkit-animation: goToRight 1.5s;
-		-ms-animation: goToRight 1.5s;
-		-o-animation: goToRight 1.5s;
-		animation: goToRight 1.5s;
-		@include fillmode;
+		@include susy-breakpoint(680px){
+			left: -350px;
+			opacity: 1;
+			-webkit-animation: goToRight 1.5s;
+			   -moz-animation: goToRight 1.5s;
+				-ms-animation: goToRight 1.5s;
+				 -o-animation: goToRight 1.5s;
+					animation: goToRight 1.5s;
+			@include fillmode;
+		}
+
 	}
 // -------------------------------------
 	@-moz-keyframes  goToLeft {
@@ -151,6 +191,116 @@
 	    to {opacity: 1;}
 	}
 	// --------------------
+
+
+	@include susy-breakpoint($sm){
+
+	}
+
+	@-webkit-keyframes jumpUp {
+	    40% {
+		    width: 10px;
+		    height: 10px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -5px;
+		    margin-top: -5px;
+		}
+		80% {
+		    width: 150px;
+		    height: 150px;
+		    margin-left: -15px;
+		    margin-top: -15px;
+			top: -5px;
+			left: -5px;
+		}
+		100% {
+			width: 130px;
+			height: 130px;
+		    margin-left: 0;
+		    margin-top: 0;
+			top: -5px;
+			left: -5px;
+		}
+	}
+	@-moz-keyframes jumpUp {
+	    40% {
+		    width: 10px;
+		    height: 10px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -5px;
+		    margin-top: -5px;
+		}
+		80% {
+		    width: 150px;
+		    height: 150px;
+		    margin-left: -15px;
+		    margin-top: -15px;
+			top: -5px;
+			left: -5px;
+		}
+		100% {
+			width: 130px;
+			height: 130px;
+		    margin-left: 0;
+		    margin-top: 0;
+			top: -5px;
+			left: -5px;
+		}
+	}
+	@-ms-keyframes jumpUp {
+	    40% {
+		    width: 10px;
+		    height: 10px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -5px;
+		    margin-top: -5px;
+		}
+		80% {
+		    width: 150px;
+		    height: 150px;
+		    margin-left: -15px;
+		    margin-top: -15px;
+			top: -5px;
+			left: -5px;
+		}
+		100% {
+			width: 130px;
+			height: 130px;
+		    margin-left: 0;
+		    margin-top: 0;
+			top: -5px;
+			left: -5px;
+		}
+	}
+	@-o-keyframes jumpUp {
+	    40% {
+		    width: 10px;
+		    height: 10px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -5px;
+		    margin-top: -5px;
+		}
+		80% {
+		    width: 150px;
+		    height: 150px;
+		    margin-left: -15px;
+		    margin-top: -15px;
+			top: -5px;
+			left: -5px;
+		}
+		100% {
+			width: 130px;
+			height: 130px;
+		    margin-left: 0;
+		    margin-top: 0;
+			top: -5px;
+			left: -5px;
+		}
+	}
 	@keyframes jumpUp {
 	    40% {
 		    width: 10px;
@@ -165,16 +315,16 @@
 		    height: 150px;
 		    margin-left: -15px;
 		    margin-top: -15px;
-			top: 0;
-			left: 0;
+			top: -5px;
+			left: -5px;
 		}
 		100% {
-			width: 120px;
-			height: 120px;
+			width: 130px;
+			height: 130px;
 		    margin-left: 0;
 		    margin-top: 0;
-			top: 0;
-			left: 0;
+			top: -5px;
+			left: -5px;
 		}
 	}
 }

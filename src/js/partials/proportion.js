@@ -8,8 +8,12 @@ function setHeight( el, i){
 
 $(document).ready(function(){
 	var header 		= $(".header--animation");
+	var win_w 		= $(window).width();
 
-	setHeight( header, 2.1559633 );
+	if(win_w > 680)
+		setHeight( header, 2.1559633 );
+	else
+		header.removeAttr("style");
 
 	$(window).resize(function(){
 		var win_w = $(window).width();

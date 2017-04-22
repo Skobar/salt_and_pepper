@@ -17,11 +17,17 @@
 	}
 
 	&__col3 {
-		padding: 28px 24px;
+
+		@include susy-breakpoint(400px){
+			padding: 28px 24px;
+		}
 
 		.gallery--item {
-			@include span(1 of 3);
 			padding: 4px;
+
+			@include susy-breakpoint(400px){
+				@include span(1 of 3);
+			}
 		}
 	}
 }

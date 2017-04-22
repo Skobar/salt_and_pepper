@@ -1,10 +1,24 @@
 .header {
-	background: $color-yellow-4;
 	overflow: hidden;
 	@include clearfix;
 
 	&--animation {
-		background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
+		background: $color-yellow-4 url("../img/bg-header-top.png") no-repeat 100% top;
 		background-size: cover;
+		display: flex;
+		flex-direction: column-reverse;
+		// align-content: flex-end;
+		justify-content: flex-end;
+
+		@include susy-breakpoint(400px){
+			min-height: 1100px;
+		}
+
+		@include susy-breakpoint(680px){
+			background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
+			background-size: cover;
+			display: block;
+			min-height: auto;
+		}
 	}
 }

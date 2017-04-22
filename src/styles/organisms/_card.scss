@@ -1,30 +1,65 @@
 .card {
 	@include clearfix;
-	display: flex;
 	background: $color-yellow-2;
 
-	&--billboard {
-		width: 50%;
+	@include susy-breakpoint(680px){
+		display: flex;
+	}
 
-		&__right {
-			float: right;
+	&--billboard {
+
+		@include susy-breakpoint(680px){
+			width: 50%;
+
+			&__right {
+				float: right;
+			}
+
 		}
 	}
 
 	&--content {
-		width:50%;
+
+		@include susy-breakpoint(680px){
+			width: 50%;
+		}
 	}
 
 	&--buttons {
-		width: 250px;
+		margin-bottom: 20px;
+
+		@include susy-breakpoint(680px){
+			width: 250px;
+		}
 	}
 
 	&--img-block {
 
 		&__left {
-			display: inline-block;
-			float: left;
-			margin-right: 5px;
+			@include susy-breakpoint(680px){
+				display: inline-block;
+				float: left;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	&--image {
+
+		&__full {
+			display: none;
+
+			@include susy-breakpoint(680px){
+				display: inline;
+			}
+		}
+
+		&__mobile {
+			display: inline;
+
+			@include susy-breakpoint(680px){
+				display: none;
+			}
 		}
 	}
 
@@ -32,6 +67,11 @@
 		font-size: 20px;
 		line-height: 1.4;
 		color: $color-base;
+
+		@include susy-breakpoint($sm){
+			font-size: 24px;
+			line-height: 1.33;
+		}
 
 		&__invert {
 			color: white;
