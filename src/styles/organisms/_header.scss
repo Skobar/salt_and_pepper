@@ -19,7 +19,7 @@
 			min-height: 1104px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			background: $color-blue-3 url("../img/bg-header.png") no-repeat 100% top;
 			background-size: cover;
 			display: block;

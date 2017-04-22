@@ -18,12 +18,19 @@
 		margin-left: 11px;
 	}
 
-	@include susy-breakpoint(680px){
+	@include susy-breakpoint(830px){
 		text-align: left;
+		padding: 0;
+		letter-spacing: .32rem;
+		font-size: 2vw;
+		margin-left: 20px;
+	}
+
+	@include susy-breakpoint(1100px){
 		font-size: 3.26vw;
 		margin-left: 70px;
-		padding: 0;
 	}
+
 
 	@include susy-breakpoint($xl){
 		margin-left: 80px;
@@ -44,6 +51,16 @@
 			margin-left: 12px;
 		}
 
+		@include susy-breakpoint(830px){
+			font-size: 4vw;
+			margin-left: 0;
+		}
+
+		@include susy-breakpoint($md){
+			font-size: 6.2vw;
+
+		}
+
 		@include susy-breakpoint($xl){
 			margin-left: 0;
 			// font-size: 99px;
@@ -61,6 +78,15 @@
 			font-size: 78px;
 			font-size: 12vw;
 		}
+
+		@include susy-breakpoint(830px){
+			font-size: 4vw;
+		}
+
+		@include susy-breakpoint($md){
+			font-size: 5.6vw;
+		}
+
 
 		@include susy-breakpoint($xl){
 			font-size: 88px;

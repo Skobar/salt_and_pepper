@@ -6,12 +6,18 @@
 		padding: 20px;
 
 		@include susy-breakpoint($sm){
-			@include span(220px);
-			padding-top: 20px;
-			padding-left: 32px;
+			@include span(250px);
+			padding-top: 11px;
+			padding-left: 58px;
 		}
 
 		@include susy-breakpoint(680px){
+			@include span(full);
+			padding-top: 11px;
+			padding-left: 0px;
+		}
+
+		@include susy-breakpoint(830px){
 			@include span(50%);
 			padding-top: 20px;
 			padding-left: 32px;
@@ -27,9 +33,11 @@
 
 		@include susy-breakpoint($sm){
 			padding-top: 16px;
+			font-size: 16px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
+			font-size: 12px;
 			padding-top: 9px;
 			line-height: 47px;
 		}
@@ -38,14 +46,14 @@
 	&--copy-desktop {
 		display: none;
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			display: inline;
 		}
 	}
 
 	&--socials {
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			@include span(50%);
 		}
 	}

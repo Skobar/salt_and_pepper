@@ -2,13 +2,13 @@
 	@include clearfix;
 	background: $color-yellow-2;
 
-	@include susy-breakpoint(680px){
+	@include susy-breakpoint(830px){
 		display: flex;
 	}
 
 	&--billboard {
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			width: 50%;
 
 			&__right {
@@ -20,7 +20,7 @@
 
 	&--content {
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			width: 50%;
 		}
 	}
@@ -28,7 +28,7 @@
 	&--buttons {
 		margin-bottom: 20px;
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			width: 250px;
 		}
 	}
@@ -36,7 +36,7 @@
 	&--img-block {
 
 		&__left {
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 				display: inline-block;
 				float: left;
 				margin-right: 5px;
@@ -49,7 +49,7 @@
 		&__full {
 			display: none;
 
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 				display: inline;
 			}
 		}
@@ -57,7 +57,7 @@
 		&__mobile {
 			display: inline;
 
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 				display: none;
 			}
 		}

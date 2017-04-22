@@ -2,7 +2,7 @@
 	overflow: hidden;
 	margin-bottom: 7px;
 
-	@include susy-breakpoint(680px){
+	@include susy-breakpoint(830px){
 		margin: 0;
 	}
 
@@ -24,7 +24,7 @@
 			padding-bottom: 95px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			max-height: 715px;
 			padding-top: 105px;
 			padding-left: 49px;
@@ -38,7 +38,7 @@
 			margin-right: -50px;
 			z-index: 2;
 
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 				@include triangle(solid $color-red-3,right,33px,absolute,true);
 				top: 220px;
 				right: 0px;
@@ -56,7 +56,7 @@
 			padding-bottom: 54px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			padding-bottom: 30px;
 		}
 	}
@@ -67,11 +67,11 @@
 		@include susy-breakpoint($sm){
 			position: absolute;
 			top: 103px;
-			right: 25px;
+			left: 350px;
 			width: 226px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			position: static;
 			text-align: left;
 			width: auto;
@@ -88,12 +88,12 @@
 			letter-spacing: 0.004em;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			padding: 64px 0 0 0;
 		}
 
 		&--row {
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 				display: block;
 			}
 		}
@@ -109,7 +109,7 @@
 			letter-spacing: -.005em;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			max-width: 500px;
 			margin-left: 41px;
 		}
@@ -159,7 +159,7 @@
 			margin-bottom: -33px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			margin-left: 0;
 			-webkit-transition: transform 35s linear;
 			   -moz-transition: transform 35s linear;
@@ -171,7 +171,7 @@
 
 	&:hover {
 		.gallery--img {
-			@include susy-breakpoint(680px){
+			@include susy-breakpoint(830px){
 			-webkit-transform: scale(2);
 			   -moz-transform: scale(2);
 				-ms-transform: scale(2);

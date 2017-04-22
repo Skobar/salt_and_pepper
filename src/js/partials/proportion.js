@@ -10,7 +10,7 @@ $(document).ready(function(){
 	var header 		= $(".header--animation");
 	var win_w 		= $(window).width();
 
-	if(win_w > 680)
+	if(win_w > 830)
 		setHeight( header, 2.1559633 );
 	else
 		header.removeAttr("style");
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		var win_w = $(window).width();
 
-		if(win_w > 680)
+		if(win_w > 830)
 			setHeight( header, 2.1559633 );
 		else
 			header.removeAttr("style");

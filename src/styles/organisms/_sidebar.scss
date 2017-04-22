@@ -45,5 +45,9 @@
 			letter-spacing: 0.06em;
 			margin: 0;
 		}
+
+		@include susy-breakpoint($md){
+			padding-bottom: 52px;
+		}
 	}
 }

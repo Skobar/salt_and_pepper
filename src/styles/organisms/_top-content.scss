@@ -24,18 +24,21 @@
 			padding-bottom: 90px;
 		}
 
-		@include susy-breakpoint(680px){
-			background: $color-yellow-2 url("../img/bg-gallery.png") 100% 0;
-		}
-
-		@include susy-breakpoint(680px){
-			padding-top: 37px;
+		@include susy-breakpoint(830px){
+			background: $color-yellow-2 url("../img/bg-gallery.png") 73% 0;
+			background-size: 640px 640px;
+			padding-top: 30px;
 			padding-bottom: 0;
-			padding-left: 42px;
+			padding-left: 0;
 
 			&::before {
 				display: none;
 			}
+		}
+
+		@include susy-breakpoint($md){
+			padding-top: 34px;
+			padding-left: 38px;
 		}
 	}
 
@@ -44,6 +47,11 @@
 		@include susy-breakpoint($sm){
 			padding-left: 47px;
 			padding-bottom: 8px;
+		}
+
+		@include susy-breakpoint(830px){
+			width: 270px;
+			padding: 0;
 		}
 	}
 
@@ -58,10 +66,15 @@
 			margin-left: 60px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
+			margin-left: 45px;
+			font-size: 39px;
+			padding: 0;
+		}
+
+		@include susy-breakpoint($xl){
 			margin-left: 55px;
 			font-size: 46px;
-			padding: 0;
 		}
 	}
 
@@ -77,7 +90,7 @@
 			margin-left: 62px;
 		}
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			margin-left: 46px;
 			margin-bottom: 41px;
 			font-size: 44px;
@@ -89,7 +102,7 @@
 		position: relative;
 		top: -6px;
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint(830px){
 			margin-left: 46px;
 			top: auto;
 		}
