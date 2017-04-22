@@ -15,8 +15,9 @@
 		background-size: cover;
 		z-index: 2;
 
-		@include susy-breakpoint(680px){
-			padding-bottom: 0;
+		@include susy-breakpoint($sm){
+			padding-top: 58px;
+			padding-bottom: 67px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -24,10 +25,10 @@
 		}
 
 		&::before {
-			@include triangle(solid $color-blue-6,up,33px,absolute,true);
+			@include triangle(solid $color-blue-6,up,37px,absolute,true);
 			bottom: 12px;
 			left: 50%;
-			margin-left: -33px;
+			margin-left: -30px;
 
 			@include susy-breakpoint(680px){
 				@include triangle(solid $color-yellow-5,left,33px,absolute,true);
@@ -42,15 +43,44 @@
 	&--img-block {
 		padding-bottom: 9px;
 		margin-left: -13px;
+
+		@include susy-breakpoint($sm){
+			width: 572px;
+			margin: 0 auto;
+			padding-right: 12px;
+			padding-bottom: 0;
+		}
+
+		@include susy-breakpoint(680px){
+			width: auto;
+			margin: 0;
+			padding-right: 0;
+		}
+	}
+
+	&--gallery-img {
+		@include susy-breakpoint($sm){
+			margin-top: -9px;
+		}
 	}
 
 	&--heading {
-		padding-bottom: 30px;
+		padding-bottom: 31px;
 		margin-left: -5px;
+
+		@include susy-breakpoint($sm){
+			margin-left: 10px;
+			letter-spacing: -0.013em;
+		}
+
 	}
 
 	&--buttons {
 		display: inline-block;
+
+		@include susy-breakpoint($sm){
+			margin-left: 11px;
+		}
 	}
 
 	&--gallery {

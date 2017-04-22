@@ -11,10 +11,15 @@
 	&__top {
 		padding-top: 32px;
 		padding-bottom: 10px;
-		padding-left: 7px;
+		padding-left: 10px;
 
 		@include susy-breakpoint(400px){
-			@include span(140px);
+			@include span(110px);
+		}
+
+		@include susy-breakpoint($sm){
+			padding-left: 0;
+			margin-left: 40px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -22,10 +27,12 @@
 			width: 100%;
 			padding-top: 28px;
 			padding-left: 0;
+			margin-left: 0;
 		}
 	}
 
 	&__bottom {
+		display: none;
 
 		@include susy-breakpoint(680px){
 			display: inline-block;
@@ -35,7 +42,7 @@
 	}
 
 	&--img {
-		width: 107px;
+		width: 110px;
 		height: auto;
 
 		@include susy-breakpoint(680px){

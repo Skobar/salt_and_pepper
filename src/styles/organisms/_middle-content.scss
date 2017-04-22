@@ -19,8 +19,8 @@
 
 		@include susy-breakpoint($sm){
 			max-height: 715px;
-			padding-top: 85px;
-			padding-bottom: 64px;
+			padding-top: 80px;
+			padding-bottom: 95px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -31,10 +31,10 @@
 		}
 
 		&::before {
-			@include triangle(solid $color-blue-5,up,33px,absolute,true);
-			bottom: 12px;
+			@include triangle(solid $color-blue-5,up,43px,absolute,true);
+			bottom: 15px;
 			right: 50%;
-			margin-right: -33px;
+			margin-right: -50px;
 			z-index: 2;
 
 			@include susy-breakpoint(680px){
@@ -52,7 +52,7 @@
 		position: relative;
 
 		@include susy-breakpoint($sm){
-			padding-bottom: 55px;
+			padding-bottom: 54px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -66,7 +66,7 @@
 		@include susy-breakpoint($sm){
 			position: absolute;
 			top: 103px;
-			right: -20px;
+			right: 25px;
 			width: 226px;
 		}
 
@@ -83,7 +83,8 @@
 
 		@include susy-breakpoint($sm){
 			text-align: left;
-			padding: 0 40px 0 50px;
+			padding: 0 40px 0 46px;
+			letter-spacing: 0.004em;
 		}
 
 		@include susy-breakpoint(680px){
@@ -99,11 +100,12 @@
 
 	&--desc {
 		padding-bottom: 47px;
-		letter-spacing: 0.005em;
 
 		@include susy-breakpoint($sm){
-			max-width: 300px;
+			padding-bottom: 68px;
+			max-width: 270px;
 			margin-left: 50px;
+			letter-spacing: -.005em;
 		}
 
 		@include susy-breakpoint(680px){
@@ -116,7 +118,14 @@
 
 		@include susy-breakpoint($sm){
 			margin-left: 40px;
+			width: 220px;
+			margin: 0 auto;
 		}
+	}
+
+	&--button {
+		letter-spacing: .07em;
+		padding: 18px 20px;
 	}
 
 	&--gallery {
@@ -132,19 +141,28 @@
 		width: auto;
 		max-width: none;
 		margin-left: -30%;
-		@include susy-breakpoint(680px){
-		-webkit-transition: transform 35s linear;
-		   -moz-transition: transform 35s linear;
-			-ms-transition: transform 35s linear;
-			 -o-transition: transform 35s linear;
-				transition: transform 35s linear;
-		}
 
 		@include susy-breakpoint(300px){
 			height: auto;
 			width: auto;
 			max-width: 100%;
 			margin-left: 0;
+		}
+
+		@include susy-breakpoint($sm){
+			margin-left: 2px;
+			transform: scale(1.06);
+			margin-top: 11px;
+			margin-bottom: -33px;
+		}
+
+		@include susy-breakpoint(680px){
+			margin-left: 0;
+			-webkit-transition: transform 35s linear;
+			   -moz-transition: transform 35s linear;
+				-ms-transition: transform 35s linear;
+				 -o-transition: transform 35s linear;
+					transition: transform 35s linear;
 		}
 	}
 

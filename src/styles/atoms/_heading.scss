@@ -24,6 +24,11 @@
 		@include susy-breakpoint(400px){
 			font-size: 67px;
 		}
+
+		@include susy-breakpoint($sm){
+			line-height: 1;
+			font-size: 61px;
+		}
 	}
 
 	&__invert {

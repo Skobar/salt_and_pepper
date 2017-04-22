@@ -5,23 +5,27 @@
 	background: $color-yellow-4;
 
 	&--billboard {
-		background: $color-yellow-2 url("../img/bg-gallery.png") 100% 0;
-		background-size: cover;
+		background: $color-yellow-2 url("../img/bg-gallery-mobile.png") 100% -4px;
 		padding-top: 80px;
 		padding-bottom: 40px;
 		text-align: center;
 		position: relative;
 
 		&::before {
-			@include triangle(solid white,up,33px,absolute,true);
-			bottom: 12px;
+			@include triangle(solid white,up,37px,absolute,true);
+			bottom: 15px;
 			right: 50%;
-			margin-right: -33px;
+			margin-right: -47px;
 		}
 
 		@include susy-breakpoint($sm){
 			text-align: left;
-			padding-top: 54px;
+			padding-top: 57px;
+			padding-bottom: 90px;
+		}
+
+		@include susy-breakpoint(680px){
+			background: $color-yellow-2 url("../img/bg-gallery.png") 100% 0;
 		}
 
 		@include susy-breakpoint(680px){
@@ -38,7 +42,8 @@
 	&--img-block {
 
 		@include susy-breakpoint($sm){
-			padding-left: 50px;
+			padding-left: 47px;
+			padding-bottom: 8px;
 		}
 	}
 
@@ -50,7 +55,7 @@
 		@include susy-breakpoint($sm){
 			max-width: 250px;
 			font-size: 41px;
-			margin-left: 72px;
+			margin-left: 60px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -62,13 +67,14 @@
 
 	&--mark {
 		font-weight: normal;
-		padding: 0 16px 0 9px;
-		margin: 0 10px 20px;
+		margin: 0 28px 20px;
 		font-size: 28px;
+		line-height: 1.35;
+		letter-spacing: -0.006em;
 
 		@include susy-breakpoint($sm){
 			font-size: 41px;
-			margin-left: 70px;
+			margin-left: 62px;
 		}
 
 		@include susy-breakpoint(680px){
@@ -81,7 +87,7 @@
 	&--buttons {
 		display: inline-block;
 		position: relative;
-		top: -7px;
+		top: -6px;
 
 		@include susy-breakpoint(680px){
 			margin-left: 46px;

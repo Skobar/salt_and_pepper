@@ -8,7 +8,7 @@
 		line-height: 0;
 		text-align: center;
 
-		@include susy-breakpoint(680px){
+		@include susy-breakpoint($sm){
 			text-align: right;
 		}
 	}
@@ -16,35 +16,44 @@
 	&--item {
 		display: inline-block;
 		text-align: center;
-		width: 50%;
-		margin-top: 10px;
+		width: auto;
 
-		@include susy-breakpoint(400px){
+		@include susy-breakpoint(270px){
+			width:50%;
+			margin-bottom: 5px;
+		}
+
+		@include susy-breakpoint(360px){
 			width: auto;
-			margin: 0;
+			margin-bottom: 0px;
 		}
 	}
 
 	&--link {
 		display: inline-block;
-		width: 100px;
-		height: 100px;
+		width: 90px;
+		height: 83px;
 		opacity: 0.9;
 
+		@include susy-breakpoint(680px){
+			width: 100px;
+			height: 100px;
+		}
+
 		&__fb {
-			background: $color-blue url("../img/sprite.png") no-repeat 0 -135px;
+			background: $color-blue url("../img/sprite.png") no-repeat -3px -144px;
 		}
 
 		&__vk {
-			background: $color-blue-2 url("../img/sprite.png") no-repeat -103px -135px;
+			background: $color-blue-2 url("../img/sprite.png") no-repeat -106px -144px;
 		}
 
 		&__yamap {
-			background: $color-yellow url("../img/sprite.png") no-repeat -206px -135px;
+			background: $color-yellow url("../img/sprite.png") no-repeat -209px -144px;
 		}
 
 		&__yt {
-			background: $color-red-2 url("../img/sprite.png") no-repeat -309px -135px;
+			background: $color-red-2 url("../img/sprite.png") no-repeat -313px -144px;
 		}
 
 		&:hover {

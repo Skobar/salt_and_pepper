@@ -3,7 +3,7 @@
 	border: 3px solid $color-base;
 	background: $color-alpha-btn-bg;
 	color: $color-base;
-	padding: 17px 10px;
+	padding: 18px 10px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -14,6 +14,10 @@
 
 	@include susy-breakpoint(400px){
 		font-size: 22px;
+	}
+
+	@include susy-breakpoint($sm){
+		padding: 18px 50px;
 	}
 
 	@include susy-breakpoint(680px){

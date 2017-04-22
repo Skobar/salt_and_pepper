@@ -5,6 +5,12 @@
 	&--content {
 		padding: 20px;
 
+		@include susy-breakpoint($sm){
+			@include span(220px);
+			padding-top: 20px;
+			padding-left: 32px;
+		}
+
 		@include susy-breakpoint(680px){
 			@include span(50%);
 			padding-top: 20px;
@@ -19,8 +25,21 @@
 		color: $color-gray-2;
 		letter-spacing: 0.028em;
 
+		@include susy-breakpoint($sm){
+			padding-top: 16px;
+		}
+
 		@include susy-breakpoint(680px){
+			padding-top: 9px;
 			line-height: 47px;
+		}
+	}
+
+	&--copy-desktop {
+		display: none;
+
+		@include susy-breakpoint(680px){
+			display: inline;
 		}
 	}
 

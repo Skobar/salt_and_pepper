@@ -1,6 +1,11 @@
 .header {
 	overflow: hidden;
 	@include clearfix;
+	margin-bottom: 10px;
+
+	@include susy-breakpoint(680px){
+		margin: 0;
+	}
 
 	&--animation {
 		background: $color-yellow-4 url("../img/bg-header-top.png") no-repeat 100% top;
@@ -11,7 +16,7 @@
 		justify-content: flex-end;
 
 		@include susy-breakpoint(400px){
-			min-height: 1100px;
+			min-height: 1104px;
 		}
 
 		@include susy-breakpoint(680px){
