@@ -15,6 +15,12 @@
 		@include susy-breakpoint($sm){
 			font-size: 57px;
 		}
+
+		@include susy-breakpoint(830px){
+			font-size: 57px;
+			font-size: 4.1vw;
+		}
+
 	}
 
 	&__largest {
@@ -28,6 +34,11 @@
 		@include susy-breakpoint($sm){
 			line-height: 1;
 			font-size: 61px;
+		}
+
+		@include susy-breakpoint(830px){
+			font-size: 61px;
+			font-size: 4.38vw;
 		}
 	}
 

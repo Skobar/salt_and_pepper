@@ -25,10 +25,15 @@
 		}
 
 		@include susy-breakpoint(830px){
-			max-height: 715px;
 			padding-top: 105px;
 			padding-left: 49px;
 			padding-bottom: 40px;
+
+			max-height: none;
+			padding-top: 6.7vw;
+			padding-left: 3vw;
+			padding-bottom: 65px;
+			padding-bottom: 4.6vw;
 		}
 
 		&::before {
@@ -39,10 +44,11 @@
 			z-index: 2;
 
 			@include susy-breakpoint(830px){
-				@include triangle(solid $color-red-3,right,33px,absolute,true);
-				top: 220px;
-				right: 0px;
-				margin: 0;
+				@include triangle(solid $color-red-5,right,43px,absolute,true);
+				top: 183px;
+				top: 13vw;
+				right: -42px;
+				// margin: 0;
 			}
 		}
 	}
@@ -58,6 +64,7 @@
 
 		@include susy-breakpoint(830px){
 			padding-bottom: 30px;
+			padding-bottom: 2.1vw;
 		}
 	}
 
@@ -74,7 +81,8 @@
 		@include susy-breakpoint(830px){
 			position: static;
 			text-align: left;
-			width: auto;
+			width: 240px;
+			width: 17.2vw;
 		}
 	}
 
@@ -90,6 +98,9 @@
 
 		@include susy-breakpoint(830px){
 			padding: 64px 0 0 0;
+			padding: 3.8vw 0 0 0;
+			letter-spacing: -0.033em;
+			line-height: 1.01;
 		}
 
 		&--row {
@@ -111,7 +122,13 @@
 
 		@include susy-breakpoint(830px){
 			max-width: 500px;
-			margin-left: 41px;
+			margin-left: 38px;
+			margin-left: 2.7vw;
+			font-size: 18px;
+			font-size: 1.29vw;
+			line-height: 1.35;
+			padding-bottom: 68px;
+			padding-bottom: 2.8vw;
 		}
 	}
 
@@ -124,11 +141,16 @@
 			margin-left: 40px;
 			margin: 0 auto;
 		}
+
+		@include susy-breakpoint(830px){
+			margin: 0 0 0 37px;
+			margin: 0 0 2vw 2.7vw;
+		}
 	}
 
 	&--button {
 		letter-spacing: .07em;
-		padding: 18px 20px;
+		// padding: 18px 20px;
 	}
 
 	&--gallery {
@@ -157,10 +179,12 @@
 			transform: scale(1.06);
 			margin-top: 11px;
 			margin-bottom: -33px;
+			height: 100%;
 		}
 
 		@include susy-breakpoint(830px){
-			margin-left: 0;
+			margin: 0;
+			// transform: none;
 			-webkit-transition: transform 35s linear;
 			   -moz-transition: transform 35s linear;
 				-ms-transition: transform 35s linear;

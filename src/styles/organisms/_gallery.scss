@@ -2,18 +2,25 @@
 	@include clearfix;
 	background: white;
 
+	&--list {
+		height: 100%;
+	}
+
 	&--item {
 		line-height: 0;
+		height: 100%;
 	}
 
 	&--wrap {
 		position: relative;
 		overflow: hidden;
 		display: block;
+		height: 100%;
 	}
 
 	&--img {
 		width: 100%;
+		height: 100%;
 	}
 
 	&__col3 {
@@ -22,12 +29,22 @@
 			padding: 27px 26px;
 		}
 
+		@include susy-breakpoint($md){
+			padding: 25px 22px;
+		}
+
 		.gallery--item {
 			padding: 4px;
+			height: auto;
 
 			@include susy-breakpoint(400px){
 				@include span(1 of 3);
 			}
+
+			@include susy-breakpoint($md){
+				padding: 5px 1px 2px 4px;
+			}
+
 		}
 	}
 }

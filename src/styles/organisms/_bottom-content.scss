@@ -22,6 +22,10 @@
 
 		@include susy-breakpoint(830px){
 			padding-bottom: 0;
+			padding-top: 67px;
+			padding-top: 4.7vw;
+			padding-bottom: 42px;
+			padding-bottom: 3vw;
 		}
 
 		&::before {
@@ -31,11 +35,11 @@
 			margin-left: -30px;
 
 			@include susy-breakpoint(830px){
-				@include triangle(solid $color-yellow-5,left,33px,absolute,true);
-				top: 361px;
+				@include triangle(solid $color-yellow-5,left,42px,absolute,true);
+				top: 309px;
+				top: 22vw;
 				bottom: auto;
-				left: 0;
-				margin: 0;
+				left: -36px;
 			}
 		}
 	}
@@ -52,9 +56,13 @@
 		}
 
 		@include susy-breakpoint(830px){
-			width: auto;
-			margin: 0;
+			width: 566px;
+			width: 40.2vw;
+			margin: 0 0 0 23px;
+			margin: 0 0 0 1.7vw;
 			padding-right: 0;
+			padding-bottom: 16px;
+			padding-bottom: 1.1vw;
 		}
 	}
 
@@ -73,6 +81,12 @@
 			letter-spacing: -0.013em;
 		}
 
+		@include susy-breakpoint(830px){
+			margin-left: 0;
+			padding-bottom: 35px;
+			padding-bottom: 2.5vw;
+		}
+
 	}
 
 	&--buttons {
@@ -80,6 +94,10 @@
 
 		@include susy-breakpoint($sm){
 			margin-left: 11px;
+		}
+
+		@include susy-breakpoint(830px){
+			margin-left: 2px;
 		}
 	}
 

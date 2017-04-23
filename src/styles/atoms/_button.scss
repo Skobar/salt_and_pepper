@@ -17,13 +17,20 @@
 	}
 
 	@include susy-breakpoint($sm){
-		padding: 18px 50px;
+		padding: 18px 10px;
 	}
 
 	@include susy-breakpoint(680px){
 		font-size: 25px;
+		font-size: 1.6vw;
 		padding: 20px 10px;
+		padding: 1.2vw 10px;
 	}
+
+	// @include susy-breakpoint($md){
+	// 	padding: 18px 10px;
+	// 	font-size: 22px;
+	// }
 
 	&__full {
 		width: 100%;

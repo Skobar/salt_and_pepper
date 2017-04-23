@@ -31,6 +31,12 @@
 		@include susy-breakpoint(830px){
 			width: 250px;
 		}
+
+		@include susy-breakpoint($md){
+			width: 220px;
+			width: 15.9vw;
+			margin-bottom: 1vw;
+		}
 	}
 
 	&--img-block {
