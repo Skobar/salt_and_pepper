@@ -12,7 +12,6 @@
 		background-size: cover;
 		display: flex;
 		flex-direction: column-reverse;
-		// align-content: flex-end;
 		justify-content: flex-end;
 
 		@include susy-breakpoint(400px){
@@ -24,6 +23,7 @@
 			background-size: cover;
 			display: block;
 			min-height: auto;
+			padding-bottom: 5.6vw;
 		}
 	}
 }

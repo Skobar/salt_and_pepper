@@ -30,7 +30,12 @@
 		}
 
 		@include susy-breakpoint($md){
-			padding: 25px 22px;
+			padding: 23px 22px 25px;
+		}
+
+		@include susy-breakpoint($xl){
+			padding: 25px 22px 30px;
+			padding: 1.7vw 1.4vw 2vw;
 		}
 
 		.gallery--item {
@@ -43,6 +48,10 @@
 
 			@include susy-breakpoint($md){
 				padding: 5px 1px 2px 4px;
+			}
+
+			@include susy-breakpoint($xl){
+				padding: 5px 2px 1px 4px;
 			}
 
 		}

@@ -27,10 +27,9 @@
 		padding: 1.2vw 10px;
 	}
 
-	// @include susy-breakpoint($md){
-	// 	padding: 18px 10px;
-	// 	font-size: 22px;
-	// }
+	@include susy-breakpoint($xl){
+		padding: 1.3vw 10px;
+	}
 
 	&__full {
 		width: 100%;

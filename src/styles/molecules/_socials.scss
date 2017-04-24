@@ -44,24 +44,44 @@
 		opacity: 0.9;
 
 		@include susy-breakpoint(830px){
+			height: 88px;
+		}
+
+		@include susy-breakpoint($xl){
 			width: 100px;
 			height: 100px;
 		}
 
 		&__fb {
-			background: $color-blue url("../img/sprite.png") no-repeat -3px -144px;
+			background: $color-blue url("../img/sprite.png") no-repeat -3px -140px;
+
+			@include susy-breakpoint($xl){
+				background-position: -3px -137px;
+			}
 		}
 
 		&__vk {
-			background: $color-blue-2 url("../img/sprite.png") no-repeat -106px -144px;
+			background: $color-blue-2 url("../img/sprite.png") no-repeat -106px -140px;
+
+			@include susy-breakpoint($xl){
+				background-position: -106px -137px;
+			}
 		}
 
 		&__yamap {
-			background: $color-yellow url("../img/sprite.png") no-repeat -209px -144px;
+			background: $color-yellow url("../img/sprite.png") no-repeat -209px -140px;
+
+			@include susy-breakpoint($xl){
+				background-position: -207px -137px;
+			}
 		}
 
 		&__yt {
-			background: $color-red-2 url("../img/sprite.png") no-repeat -313px -144px;
+			background: $color-red-2 url("../img/sprite.png") no-repeat -313px -140px;
+
+			@include susy-breakpoint($xl){
+				background-position: -309px -137px;
+			}
 		}
 
 		&:hover {

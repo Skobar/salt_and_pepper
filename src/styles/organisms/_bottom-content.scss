@@ -24,8 +24,15 @@
 			padding-bottom: 0;
 			padding-top: 67px;
 			padding-top: 4.7vw;
+			padding-bottom: 0;
+		}
+
+		@include susy-breakpoint($xl){
+			padding-top: 75px;
+			padding-top: 4.8vw;
 			padding-bottom: 42px;
 			padding-bottom: 3vw;
+			max-height: 100%;
 		}
 
 		&::before {
@@ -41,12 +48,18 @@
 				bottom: auto;
 				left: -36px;
 			}
+
+			@include susy-breakpoint($xl){
+				@include triangle(solid $color-yellow-5,left,50px,absolute,true);
+				top: 22.1vw;
+			}
 		}
 	}
 
 	&--img-block {
 		padding-bottom: 9px;
 		margin-left: -13px;
+		line-height: 0;
 
 		@include susy-breakpoint($sm){
 			width: 572px;
@@ -64,11 +77,12 @@
 			padding-bottom: 16px;
 			padding-bottom: 1.1vw;
 		}
-	}
 
-	&--gallery-img {
-		@include susy-breakpoint($sm){
-			margin-top: -9px;
+		@include susy-breakpoint($xl){
+			width: 637px;
+			width: 40.85vw;
+			padding-bottom: 19px;
+			padding-bottom: 1.25vw;
 		}
 	}
 
@@ -87,6 +101,10 @@
 			padding-bottom: 2.5vw;
 		}
 
+		@include susy-breakpoint($xl){
+			margin-left: -8px;
+		}
+
 	}
 
 	&--buttons {
@@ -94,36 +112,54 @@
 
 		@include susy-breakpoint($sm){
 			margin-left: 11px;
+			width: 220px;
 		}
 
 		@include susy-breakpoint(830px){
 			margin-left: 2px;
+			margin-bottom: 0;
+		}
+
+		@include susy-breakpoint($xl){
+			margin-left: 0;
+			width: 250px;
 		}
 	}
 
 	&--gallery {
 		position: relative;
-		max-height: 717px;
 	}
 
-	.gallery--img {
+	&--gallery-img {
 		height: 400px;
 		width: auto;
 		max-width: none;
 		margin-left: -30%;
-		@include susy-breakpoint(830px){
-		-webkit-transition: all 35s linear;
-		   -moz-transition: all 35s linear;
-			-ms-transition: all 35s linear;
-			 -o-transition: all 35s linear;
-				transition: all 35s linear;
-		}
 
 		@include susy-breakpoint(300px){
 			height: auto;
 			width: auto;
 			max-width: 100%;
 			margin-left: 0;
+		}
+
+		@include susy-breakpoint($sm){
+			margin-top: -9px;
+			width: 100%;
+		}
+
+		@include susy-breakpoint(830px){
+			margin-top: 0;
+			// height: 100%;
+			-webkit-transition: transform 35s linear;
+			   -moz-transition: transform 35s linear;
+				-ms-transition: transform 35s linear;
+				 -o-transition: transform 35s linear;
+					transition: transform 35s linear;
+		}
+
+		@include susy-breakpoint($xl){
+			// width: 100%;
 		}
 	}
 

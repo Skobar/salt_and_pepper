@@ -50,6 +50,15 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		var win_w 		= $(window).width();
+
+		sidebar_close.on("click", function(){
+			if(!sidebar_close.hasClass("active") && win_w < 680){
+				openMenu();
+			}else if(sidebar_close.hasClass("active") && win_w < 680){
+				closeMenu();
+			}
+		});
+
 		if(win_w > 680)
 			closeMenu();
 	});

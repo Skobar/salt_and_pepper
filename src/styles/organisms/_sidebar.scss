@@ -6,7 +6,6 @@
 	z-index: 10;
 	text-align: center;
 	max-height: 250px;
-	// padding: 0 20px;
 
 	@include susy-breakpoint(400px){
 		height: 160px;
@@ -38,16 +37,12 @@
 
 		@include susy-breakpoint(680px){
 			padding-top: 0px;
-			padding-bottom: 77px;
+			padding-bottom: 52px;
 			float: none;
 			width: auto;
 			font-size: $font-size-base;
 			letter-spacing: 0.06em;
 			margin: 0;
-		}
-
-		@include susy-breakpoint($md){
-			padding-bottom: 52px;
 		}
 	}
 }

@@ -22,21 +22,18 @@
 		text-align: left;
 		padding: 0;
 		letter-spacing: .32rem;
-		font-size: 2vw;
-		margin-left: 20px;
-	}
-
-	@include susy-breakpoint(1100px){
 		font-size: 3.26vw;
 		margin-left: 70px;
+		margin-left: 5.1vw;
 	}
 
 
 	@include susy-breakpoint($xl){
 		margin-left: 80px;
-		font-size: 49px;
+		margin-left: 5.1vw;
 		font-size: 55px;
-		line-height: 0.9;
+		font-size: 3.4vw;
+		line-height: 1;
 	}
 
 	&--middle  {
@@ -52,18 +49,14 @@
 		}
 
 		@include susy-breakpoint(830px){
-			font-size: 4vw;
 			margin-left: 0;
-		}
-
-		@include susy-breakpoint($md){
 			font-size: 6.2vw;
 
 		}
 
 		@include susy-breakpoint($xl){
 			margin-left: 0;
-			// font-size: 99px;
+			letter-spacing: .4rem;
 		}
 	}
 
@@ -80,18 +73,8 @@
 		}
 
 		@include susy-breakpoint(830px){
-			font-size: 4vw;
-		}
-
-		@include susy-breakpoint($md){
-			font-size: 5.6vw;
-		}
-
-
-		@include susy-breakpoint($xl){
 			font-size: 88px;
 			font-size: 5.6vw;
-			line-height: 0.8;
 		}
 	}
 }

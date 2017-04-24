@@ -25,15 +25,21 @@
 		}
 
 		@include susy-breakpoint(830px){
-			padding-top: 105px;
-			padding-left: 49px;
-			padding-bottom: 40px;
-
 			max-height: none;
+			padding-top: 105px;
 			padding-top: 6.7vw;
+			padding-left: 49px;
 			padding-left: 3vw;
+			padding-bottom: 0;
+		}
+
+		@include susy-breakpoint($md){
 			padding-bottom: 65px;
 			padding-bottom: 4.6vw;
+		}
+
+		@include susy-breakpoint($xl){
+			padding-bottom: 4.5vw;
 		}
 
 		&::before {
@@ -48,7 +54,10 @@
 				top: 183px;
 				top: 13vw;
 				right: -42px;
-				// margin: 0;
+			}
+
+			@include susy-breakpoint($xl){
+				top: 13.4vw;
 			}
 		}
 	}
@@ -65,6 +74,11 @@
 		@include susy-breakpoint(830px){
 			padding-bottom: 30px;
 			padding-bottom: 2.1vw;
+		}
+
+		@include susy-breakpoint($xl){
+			padding-bottom: 35px;
+			padding-bottom: 2.3vw;
 		}
 	}
 
@@ -83,6 +97,10 @@
 			text-align: left;
 			width: 240px;
 			width: 17.2vw;
+		}
+
+		@include susy-breakpoint($xl){
+			margin-right: 10px;
 		}
 	}
 
@@ -127,8 +145,14 @@
 			font-size: 18px;
 			font-size: 1.29vw;
 			line-height: 1.35;
-			padding-bottom: 68px;
+			padding-bottom: 45px;
 			padding-bottom: 2.8vw;
+		}
+
+		@include susy-breakpoint($xl){
+			letter-spacing: .005em;
+			padding-bottom: 47px;
+			padding-bottom: 3vw;
 		}
 	}
 
@@ -146,11 +170,14 @@
 			margin: 0 0 0 37px;
 			margin: 0 0 2vw 2.7vw;
 		}
+
+		@include susy-breakpoint($xl){
+			width: 250px;
+		}
 	}
 
 	&--button {
 		letter-spacing: .07em;
-		// padding: 18px 20px;
 	}
 
 	&--gallery {
@@ -159,6 +186,7 @@
 		line-height: 0;
 		max-height: 715px;
 		z-index: 0;
+		height: 100%;
 	}
 
 	.gallery--img {
@@ -179,17 +207,20 @@
 			transform: scale(1.06);
 			margin-top: 11px;
 			margin-bottom: -33px;
-			height: 100%;
+			width: 100%;
 		}
 
 		@include susy-breakpoint(830px){
 			margin: 0;
-			// transform: none;
 			-webkit-transition: transform 35s linear;
 			   -moz-transition: transform 35s linear;
 				-ms-transition: transform 35s linear;
 				 -o-transition: transform 35s linear;
 					transition: transform 35s linear;
+		}
+
+		@include susy-breakpoint($xl){
+			width: 100%;
 		}
 	}
 

@@ -4,6 +4,7 @@
 
 	@include susy-breakpoint(830px){
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&--billboard {

@@ -22,12 +22,14 @@
 			margin-left: 40px;
 		}
 
-		@include susy-breakpoint(830px){
-			float: none;
-			width: 100%;
-			padding-top: 28px;
-			padding-left: 0;
+		@include susy-breakpoint(680px){
 			margin-left: 0;
+			width: 100%;
+			float: none;
+		}
+
+		@include susy-breakpoint(830px){
+			padding-top: 28px;
 		}
 	}
 
@@ -38,6 +40,16 @@
 			display: inline-block;
 			float: left;
 			margin-right: 10px;
+		}
+
+		@include susy-breakpoint($md){
+			width: 60px;
+			margin-right: 7px;
+		}
+
+		@include susy-breakpoint($xl){
+			width: 79px;
+			margin-right: 5px;
 		}
 	}
 
